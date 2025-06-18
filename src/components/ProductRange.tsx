@@ -1,12 +1,11 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Coil, Brush, Cable, Wrench } from "lucide-react";
+import { Circle, Brush, Cable, Wrench, Zap, Shield } from "lucide-react";
 
 const ProductRange = () => {
   const products = [
     {
       thickness: "0.6mm",
-      icon: Coil,
+      icon: Circle,
       applications: ["Fine mattress springs", "Delicate wire mesh", "Precision components"],
       description: "Ultra-fine wire for precision applications"
     },
@@ -24,7 +23,7 @@ const ProductRange = () => {
     },
     {
       thickness: "1.2mm",
-      icon: Coil,
+      icon: Zap,
       applications: ["Medium mattress springs", "Furniture springs", "Automotive parts"],
       description: "Standard thickness for spring applications"
     },
@@ -36,7 +35,7 @@ const ProductRange = () => {
     },
     {
       thickness: "2.0mm",
-      icon: Cable,
+      icon: Shield,
       applications: ["Cable armouring", "Heavy springs", "Industrial binding"],
       description: "Maximum thickness for robust applications"
     }
