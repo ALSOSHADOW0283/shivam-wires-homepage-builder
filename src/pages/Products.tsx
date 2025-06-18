@@ -1,18 +1,18 @@
 
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import ProductRange from "@/components/ProductRange";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const Index = () => {
+const Products = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
+      <ProductRange />
       <Footer />
       <WhatsAppButton />
     </div>
   );
 };
 
-export default Index;
+export default Products;

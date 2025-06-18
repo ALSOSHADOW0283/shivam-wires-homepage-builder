@@ -1,18 +1,18 @@
 
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const Index = () => {
+const WhyChooseUsPage = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
+      <WhyChooseUs />
       <Footer />
       <WhatsAppButton />
     </div>
   );
 };
 
-export default Index;
+export default WhyChooseUsPage;
