@@ -1,8 +1,12 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { useCountUp } from "@/hooks/useCountUp";
 
 const HeroSection = () => {
+  const yearsCount = useCountUp({ end: 15, duration: 2000 });
+  const clientsCount = useCountUp({ end: 500, duration: 2500 });
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -52,7 +56,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+              className="border-2 border-white text-gray-400 hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
               onClick={scrollToProducts}
             >
               View Products
@@ -62,11 +66,11 @@ const HeroSection = () => {
           {/* Stats or trust indicators */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400">15+</div>
+              <div className="text-3xl font-bold text-blue-400">{yearsCount}+</div>
               <div className="text-gray-300">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400">500+</div>
+              <div className="text-3xl font-bold text-blue-400">{clientsCount}+</div>
               <div className="text-gray-300">B2B Clients</div>
             </div>
             <div className="text-center col-span-2 md:col-span-1">
